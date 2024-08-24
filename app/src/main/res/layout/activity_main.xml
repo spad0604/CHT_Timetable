@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#4040B1">
+
+    <RelativeLayout
+        android:id="@+id/humiditychart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/fan"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/humidityChart"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/vien4">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Humidity Chart" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/temperatureChart"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/humidityChart"
+            android:background="@drawable/vien4">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Temperature Chart" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp">
+        <RelativeLayout
+            android:id="@+id/temp1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien2">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/thermometer" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView"
+                android:textColor="#F30000"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/temp1"
+            android:id="@+id/temp2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien2">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/thermometer" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView"
+                android:textColor="#F30000"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/temp1"
+            android:id="@+id/temp3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien2">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/thermometer"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="TextView"
+                android:textColor="#F30000"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/temp"
+        android:id="@+id/humidity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/humidity1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/humidity">
+            </ImageView>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView"
+                android:textColor="#03A9F4"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/humidity1"
+            android:id="@+id/humidity2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/humidity" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView"
+                android:textColor="#03A9F4"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/humidity1"
+            android:id="@+id/humidity3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/humidity" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="TextView"
+                android:textColor="#03A9F4"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/humidity"
+        android:id="@+id/led"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/led1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien3">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Led2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/led1"
+            android:id="@+id/led2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien3">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:text="Led3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/led1"
+            android:id="@+id/led3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien3">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:text="Led1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/led"
+        android:id="@+id/fan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/fan1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien4">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Fan2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/fan1"
+            android:id="@+id/fan2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien4">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Fan3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/fan1"
+            android:id="@+id/fan3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vien4">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Fan1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
